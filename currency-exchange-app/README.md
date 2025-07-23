@@ -3,6 +3,7 @@
 - Troy Brunette
 - SD230 Final Project
 - 12/11/2024
+<img width="1095" height="486" alt="Screenshot 2025-07-22 at 18-41-46 Currency Converter Final Form" src="https://github.com/user-attachments/assets/96811a67-4871-47c9-a111-ae2999ce2353" />
 
 ## Setup
 
