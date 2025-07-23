@@ -1,0 +1,346 @@
+/* Styles for Currency Converter App */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+
+}
+
+/* General Styles for the Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Space between left, center, and right sections */
+    align-items: center;
+    /* Vertically align items */
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    /* Align image and text horizontally */
+    text-decoration: none;
+    /* Remove link underline */
+    color: inherit;
+    /* Use inherited color for text */
+}
+
+.logo-image {
+    width: 50px;
+    /* Adjust logo size */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Space between logo and text */
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    /* Adjust font size */
+    font-weight: bold;
+    /* Optional: Bold text */
+    color: white;
+    /* Optional: Text color */
+}
+
+
+
+
+.link-nav {
+    display: flex;
+    list-style: none;
+    /* Remove bullet points */
+    margin-right: 150px;
+    padding: 0;
+    gap: 20px;
+    /* Space between links */
+}
+
+
+.link-nav a {
+    text-decoration: none;
+    /* Remove underline */
+    color: white;
+    /* Link color */
+    font-weight: 500;
+    /* Medium font weight */
+}
+
+.link-nav a:hover {
+    color: #007bff;
+    /* Optional: Change color on hover */
+}
+
+/* Right-Aligned Auth Links */
+.auth-nav {
+    display: flex;
+    align-items: center;
+    /* Vertically align */
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+    /* Space between auth links */
+}
+
+.auth-nav a {
+    text-decoration: none;
+    /* Remove underline */
+    color: white;
+    /* Link color */
+    font-weight: 500;
+}
+
+.auth-nav a:hover {
+    color: #007bff;
+    /* Optional: Change color on hover */
+}
+
+.hidden {
+    display: none;
+    /* Hide element */
+}
+
+/* Flag Icon Styles */
+.flag-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.flag-container img {
+    width: 30px;
+    height: 20px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Converter Box */
+.main-content-box {
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: white;
+    width: 80%;
+    max-width: 800px;
+    /* Prevent the box from getting too large */
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.box-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wraps tabs if screen width is small */
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1em;
+}
+
+.tab.active {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.tab.active:hover {
+    background-color: #414040;
+}
+
+.tab:hover {
+    background-color: #d0d0d0;
+}
+
+.conversion-form {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wraps inputs if necessary */
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.conversion-form label {
+    margin-right: 5px;
+    flex-basis: 100%;
+}
+
+.conversion-form input,
+.conversion-form select {
+    padding: 5px;
+    font-size: 1em;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    flex: 1 1 calc(33% - 20px);
+    /* Flexible width for inputs */
+}
+
+.switch-button {
+    background: #00cccc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switch-button:hover {
+    background: #0055ff;
+}
+
+.convert-button-container {
+    text-align: right;
+    margin: 10px;
+}
+
+.convert-button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.convert-button:hover {
+    background: #4e4c4c;
+}
+
+/* Conversion Result */
+.conversion-result {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #f4f4f9;
+    padding: 20px;
+    border: 2px solid #5e7a58;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.result-flags img {
+    width: 40px;
+    height: 30px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.rate-flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rate-flags img {
+    width: 40px;
+    height: 30px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+/* Conversion Rates Section */
+.conversion-rates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 80%;
+    margin: 20px auto;
+}
+.hidden {
+    display: none;
+}
+
+
+/* Rate Box Styles */
+.rate-box {
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.rate-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.rate-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.header-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header-table th {
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* Table Styles */
+.rate-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.rate-table td {
+    background-color: #f9f9f9;
+    padding: 8px;
+}
+
+.rate-table th {
+    background-color:#333;
+    color: white;
+    padding: 8px;
+}
+

@@ -1,0 +1,72 @@
+{
+  "time_last_update_unix": 1733961602,
+  "time_last_update_utc": "Thu, 12 Dec 2024 00:00:02 +0000",
+  "conversion_rates": {
+    "AUD": {
+      "name": "Australian Dollar",
+      "symbol": "A$",
+      "currency_code": "AUD",
+      "rate": 1.5685
+    },
+    "CAD": {
+      "name": "Canadian Dollar",
+      "symbol": "C$",
+      "currency_code": "CAD",
+      "rate": 1.416
+    },
+    "CLP": {
+      "name": "Chilean Peso",
+      "symbol": "CLP$",
+      "currency_code": "CLP",
+      "rate": 974.5304
+    },
+    "CNY": {
+      "name": "Chinese Yuan",
+      "symbol": "¥",
+      "currency_code": "CNY",
+      "rate": 7.2697
+    },
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€",
+      "currency_code": "EUR",
+      "rate": 0.9522
+    },
+    "GBP": {
+      "name": "British Pound Sterling",
+      "symbol": "£",
+      "currency_code": "GBP",
+      "rate": 0.7841
+    },
+    "INR": {
+      "name": "Indian Rupee",
+      "symbol": "₹",
+      "currency_code": "INR",
+      "rate": 84.8855
+    },
+    "JPY": {
+      "name": "Japanese Yen",
+      "symbol": "¥",
+      "currency_code": "JPY",
+      "rate": 152.3641
+    },
+    "RUB": {
+      "name": "Russian Ruble",
+      "symbol": "₽",
+      "currency_code": "RUB",
+      "rate": 105.1743
+    },
+    "USD": {
+      "name": "United States Dollar",
+      "symbol": "$",
+      "currency_code": "USD",
+      "rate": 1
+    },
+    "ZAR": {
+      "name": "South African Rand",
+      "symbol": "R",
+      "currency_code": "ZAR",
+      "rate": 17.7108
+    }
+  }
+}

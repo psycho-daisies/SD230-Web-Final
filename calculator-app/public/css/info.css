@@ -1,0 +1,200 @@
+/* Base Styles (default for all sizes) */
+body {
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    /* Use Flexbox for layout */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: space-between;
+    /* Space between logo and nav-links */
+    padding: 10px 20px;
+    /* Add padding inside the navbar */
+    background-color: #333;
+    /* Dark background */
+    color: #fff;
+    /* White text color */
+    position: sticky;
+    /* Fix navbar to the top */
+    top: 0;
+    width: 100%;
+    /* Full width */
+    z-index: 1000;
+    /* Ensure it stays on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    box-sizing: border-box;
+    /* Include padding in width calculations */
+}
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    /* Use Flexbox for logo alignment */
+    align-items: center;
+    /* Vertically center logo image and text */
+    margin-left: 0;
+    /* Ensure it stays on the far left */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-image {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Nav Links Styles */
+.nav-links {
+    position: absolute;
+    /* Position links absolutely relative to navbar */
+    left: 50%;
+    /* Move the links to the horizontal center */
+    transform: translateX(-50%);
+    /* Offset by half its width to center perfectly */
+    display: flex;
+    /* Align links horizontally */
+    justify-content: center;
+    /* Center the links within their container */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Smooth scaling */
+}
+
+.nav-links a:hover {
+    color: #ff6f61;
+    /* Change color on hover */
+    transform: scale(1.2);
+    /* Grow text slightly */
+}
+/* Reset body styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    /* Optional max-width for responsiveness */
+}
+
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #222;
+    margin-top: 20px;
+}
+
+
+/* Responsive Layout for Small Screens */
+@media (max-width: 1100px) {
+    .nav-links {
+        position: static;
+        /* Disable absolute positioning */
+        justify-content: flex-end;
+        /* Align links to the right */
+        transform: none;
+        /* Remove centering transformation */
+        margin-left: auto;
+        /* Push links to the right */
+    }
+}
+
+/* Responsive Layout for Very Small Screens (600px or smaller) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        /* Align items to the left */
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        /* Align links to the left */
+        flex-direction: row;
+        /* Stack links vertically */
+        width: 100%;
+        /* Take up full width */
+        margin-top: 10px;
+        /* Add spacing below the logo */
+        margin-left: 0;
+        /* Reset left margin */
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+        /* Add spacing between links */
+    }
+}
+
+/* Animations for Links */
+/* Jiggle Animation */
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.jiggle {
+    animation: jiggle 0.4s ease-in-out;
+    /* Animation duration and easing */
+    display: inline-block;
+    /* Ensure transform works properly */
+}
+
+.nav-links a:active {
+    animation: jiggle 0.4s ease-in-out;
+    /* Use the same jiggle animation */
+    display: inline-block;
+}
+

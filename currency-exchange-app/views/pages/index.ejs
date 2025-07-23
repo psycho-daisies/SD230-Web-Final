@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/favicon-eye.ico" type="image/x-icon">
+    <title><%= title || "Currency Converter" %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include('../partials/header') %>
+
+    <main>
+        <div class="main-content-box">
+             <!-- Tabs -->
+            <nav class="box-nav-bar">
+                <button class="tab active" id="convert-tab"">Convert</button>
+                <button class="tab">Get Rates</button>
+                <button class="tab">Show Exchange Rates</button>
+                <button class="tab">Charts</button>
+                <button class="tab">Send</button>
+                <button class="tab">Alert</button>
+            </nav>
+            <!-- Include conversion form -->
+            <%- include('../partials/conversion-form') %>
+        </div>
+
+        <!-- Include Conversion Rates Tables -->
+        <%- include('../partials/rate-tables') %>
+        
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

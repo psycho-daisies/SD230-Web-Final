@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon/favicon-eye.ico" type="image/x-icon">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/animation-effects.css">
+    <script type="module" src="/js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="/" class="logo-link">
+                <img src="/images/logo/dark-pink-acephale-path-03.svg" alt="Logo" class="logo-image">
+                <span class="logo-text">Calculator App</span>
+            </a>
+        </div>
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/info">Info</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Calculator</h1>
+            <p>Simple calculator app using HTML, CSS, JavaScript, and Express + Node.js</p>
+            <p>Final Version</p>
+            <p>Added history feature</p>
+        </header>
+        <div class="wrapper">
+            <div class="calculator-container" id="calculator">
+                <div class="display" id="display">0</div> <!-- Display section -->
+                    <button class="button action clear" data-value="clear"><span>C</span></button>
+                    <button class="button action plus-minus" data-value="+/-"><span>+/-</span></button>
+                    <button class="button operator" id="modulo" data-value="%"><span>%</span></button>
+                    <button class="button operator" id="divide" data-value="/"><span>/</span></button>
+                    <button class="button number" data-value="7"><span>7</span></button>
+                    <button class="button number" data-value="8"><span>8</span></button>
+                    <button class="button number" data-value="9"><span>9</span></button>
+                    <button class="button operator" id="multiply" data-value="*"><span>*</span></button>
+                    <button class="button number" data-value="4"><span>4</span></button>
+                    <button class="button number" data-value="5"><span>5</span></button>
+                    <button class="button number" data-value="6"><span>6</span></button>
+                    <button class="button operator" id="subtract" data-value="-"><span>-</span></button>
+                    <button class="button number" data-value="1">1</button>
+                    <button class="button number" data-value="2"><span>2</span></button>
+                    <button class="button number" data-value="3"><span>3</span></button>
+                    <button class="button operator" id="add" data-value="+"><span>+</span></button>
+                    <button class="button number" id="zero" data-value="0"><span>0</span></button>
+                    <button class="button action decimal" data-value="."><span>.</span></button>
+                    <button class="button equal" data-value="="><span>=</span></button>
+                </div>
+                <!-- History Container -->
+                <div class="history-container">
+                <div id="history-header">History</div>
+                <!-- History content will be displayed here -->
+                <div class="history" id="history-log"></div>
+                <button class="button clear-history" id="clear-history">Clear History</button>
+            </div>
+        </div>  
+        <footer>
+            <a href="/">Home</a> | <a href="/info">Info</a> | <a href="/contact">Contact</a>
+        </footer>
+    </div>
+</body>
+</html>

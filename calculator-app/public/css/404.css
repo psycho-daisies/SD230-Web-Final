@@ -1,0 +1,124 @@
+/* 404.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 8rem;
+    margin: 0;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.animation {
+    margin: 2rem 0;
+}
+
+
+/* Animations for Links */
+/* Jiggle Animation */
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.jiggle {
+    animation: jiggle 0.4s ease-in-out;
+    /* Animation duration and easing */
+    display: inline-block;
+    /* Ensure transform works properly */
+}
+
+
+
+/* Animation jiggle for the Ghost emoji */
+.ghost {
+    animation: jiggle 2s ease-in-out infinite;
+    /* Animation duration and easing */
+    display: inline-block;
+    /* Ensure transform works properly */
+    font-size: 10.5rem;
+    /* Increase font size */
+    margin: 0 0.5rem;
+    /* Add some space */
+    transform-origin: center;
+    /* Rotate around the center */
+
+}
+
+
+
+.home-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    background: #ff6f61;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.home-button:hover {
+    background: #ff5a4d;
+    transform: scale(1.05);
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}

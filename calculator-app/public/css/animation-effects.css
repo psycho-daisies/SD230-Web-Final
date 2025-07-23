@@ -1,0 +1,55 @@
+/* Animations for Links */
+/* Jiggle Animation */
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.jiggle {
+    animation: jiggle 0.4s ease-in-out;
+    /* Animation duration and easing */
+    display: inline-block;
+    /* Ensure transform works properly */
+}
+
+
+.nav-links a:active {
+    animation: jiggle 0.4s ease-in-out;
+    /* Use the same jiggle animation */
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Smooth scaling */
+}
+
+.nav-links a:hover {
+    color: #ff6f61;
+    /* Change color on hover */
+    transform: scale(1.2);
+    animation: jiggle 0.4s ease-in-out infinite;
+    /* Grow text slightly */
+}
+

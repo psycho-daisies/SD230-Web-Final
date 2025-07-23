@@ -1,0 +1,33 @@
+<!-- Conversion Form -->
+<div class="tab-content" id="convert-tab-content">
+    <div class="conversion-form" id="converter-form">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <!-- Dropdown for Starting Currency -->
+        <label for="starting-currency">From:</label>
+        <select id="starting-currency">
+            <!-- Options will be populated dynamically -->
+        </select>
+        <!-- Switch Button -->
+        <button class="switch-button" id="switch-button">⇆</button>
+        <!-- Dropdown for Target Currency -->
+        <label for="target-currency">To:</label>
+        <select id="target-currency">
+            <!-- Options load here -->
+        </select>
+    </div>
+</div>
+
+<div class="convert-button-container">
+    <button class="convert-button" value="Convert" id="convert-button">Convert</button>
+</div>
+
+<!-- Conversion Results -->
+<!-- Currency Exchange Results -->
+<div class="conversion-result hidden" id="conversion-result">
+    <div class="result-flags">
+        <img class="rate-flags" id="from-flag" src="" alt="From Currency Flag">
+        <p id="conversion-text"></p>
+        <img class="rate-flags" id="to-flag" src="" alt="To Currency Flag">
+    </div>
+</div>

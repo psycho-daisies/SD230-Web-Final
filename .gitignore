@@ -1,0 +1,25 @@
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build output
+dist/
+build/
+out/
+coverage/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# VS Code settings
+.vscode/
